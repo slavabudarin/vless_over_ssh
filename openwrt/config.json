@@ -1,4 +1,5 @@
 //xray config
+// /opt/xray/
 
 {
   "inbounds": [
