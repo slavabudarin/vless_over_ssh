@@ -1,4 +1,7 @@
 // /etc/init.d/ssh-tunnel
+// before start you need key change with server
+// you must chech that you can login via ssh keys to server
+// before it install openssh :) because dropbeat cant create ssh tun
 
 #!/bin/sh /etc/rc.common
 
