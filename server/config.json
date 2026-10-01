@@ -1,0 +1,24 @@
+// /usr/local/etc/xray/config.json
+
+{
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 6666,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "8ef9d50e-dfde-4ac2-bb0f-fccac25bf1e1"
+          }
+        ],
+        "decryption": "none"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
