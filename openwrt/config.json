@@ -1,0 +1,39 @@
+//xray config
+
+{
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 6666,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "11111111-1111-1111-1111-111111111111"
+              
+          }
+        ],
+        "decryption": "none"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "127.0.0.1",
+            "port": 1080,
+            "users": [
+              {
+                "id": "11111111-1111-1111-1111-111111111111",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
